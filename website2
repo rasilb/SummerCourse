@@ -1,18 +1,24 @@
-function doNothing(){
-document.getElementById("demo").innerHTML = "This does nothing";
-document.getElementById("did").innerHTML ="It did nothing";
-}
-function fun(){
-    document.getElementById("funny").innerHTML = "Unfortunatly something funny did not happen";
-}
-function clock() {
-    const today = new Date();
-    let h = today.getHours();
-    let m = today.getMinutes();
-    let s = today.getSeconds();
-    m = checkTime(m);
-    s = checkTime(s);
-    document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
-    setTimeout(clock, 1000);
-  }
-  
+  function doNothing(){
+        document.getElementById("demo").innerHTML = "This does nothing";
+        document.getElementById("did").innerHTML ="It did nothing";
+        }
+    function fun(){
+            document.getElementById("funny").innerHTML = "Unfortunatly something funny did not happen";
+        }
+
+    
+       
+     
+    
+        const selectColor = document.querySelector("#selectColor");
+        const title = document.querySelector(".main__title");
+        selectColor.value = "#ffffff";
+        
+        selectColor.addEventListener("input", bgColor);
+        
+        function bgColor() {
+          document.body.style.backgroundColor = selectColor.value;
+        }
+       
+          
+    
