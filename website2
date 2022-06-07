@@ -1,15 +1,6 @@
-  function doNothing(){
-        document.getElementById("demo").innerHTML = "This does nothing";
-        document.getElementById("did").innerHTML ="It did nothing";
-        }
-    function fun(){
-            document.getElementById("funny").innerHTML = "Unfortunatly something funny did not happen";
-        }
-
-    
-       
-     
-    
+        function fun(){
+            document.getElementById("funny").innerHTML = "You can select a color for fun";
+        } 
         const selectColor = document.querySelector("#selectColor");
         const title = document.querySelector(".main__title");
         selectColor.value = "#ffffff";
